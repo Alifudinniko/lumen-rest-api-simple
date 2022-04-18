@@ -22,3 +22,4 @@ $router->get('/', function () use ($router) {
 $router->post('/product', 'ProductController@create');
 $router->get('/product', 'ProductController@index');
 $router->get('/product/{id}', 'ProductController@show');
+$router->put('/product/{id}', 'ProductController@update');
