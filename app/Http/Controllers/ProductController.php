@@ -69,6 +69,6 @@ class ProductController extends Controller
         };
 
         $product->delete();
-        return response()->json(['message' => $res . "Product success delete"]);
+        return response()->json(["data" => $product, 'message' =>  "Product success delete"]);
     }
 }

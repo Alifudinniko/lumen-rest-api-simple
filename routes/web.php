@@ -3,6 +3,7 @@
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,6 @@ $router->get('/product', 'ProductController@index');
 $router->get('/product/{id}', 'ProductController@show');
 $router->put('/product/{id}', 'ProductController@update');
 $router->delete('/product/{id}', 'ProductController@delete');
+
+
+$router->post('/register', 'UserController@register');
