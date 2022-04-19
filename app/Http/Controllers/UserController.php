@@ -50,6 +50,6 @@ class UserController extends Controller
             'token' => $generateToken
         ]);
 
-        return response()->json($user);
+        return response()->json(['token' => $user->token]);
     }
 }
